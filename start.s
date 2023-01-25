@@ -27,7 +27,7 @@ loop:
 	delay1:
 		add r10, r10, #1
 		cmp r10, r2
-		bne, delay1
+		bne delay1
 
 	ldr r1, =GPIOVAL 
 	str r1, [r0, #GPFCLR0] 
