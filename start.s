@@ -36,6 +36,6 @@ loop:
 	delay2:
 		add r10, r10, #1
 		cmp r10, r2
-		bne, delay2
+		bne delay2
 
 	b loop
