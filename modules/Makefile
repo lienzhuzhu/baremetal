@@ -1,4 +1,4 @@
-obj-m := kobject.o
+obj-m := kled.o
 
 KDIR = /lib/modules/$(shell uname -r)/build/
 
