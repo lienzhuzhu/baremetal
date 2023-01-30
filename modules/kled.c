@@ -4,11 +4,11 @@
 #include <linux/module.h>
 #include <linux/init.h>
 
-static int led_state;
 
 #define MAX_SIZE 1024
 #define BCM2837_GPIO_ADDRESS 0x3f200000
 
+static int led_state;
 
 static ssize_t led_state_show(struct kobject *kobj, struct kobj_attribute *attr, char *buf) {
 	return sprintf(buf, "%d\n", led_state);
